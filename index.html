@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nebula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Nebula Coders</title>
+</head>
+
+<body>
+    <div id="preloder">
+        <div id="loader">
+            <div id="loader-1"></div>
+            <div id="loader-1"></div>
+            <div id="loader-1"></div>
+        </div>
+        <div class="text">
+            <h1>WELCOME</h1>
+        </div>
+    </div>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">NEBULA CODERS</a></div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nebulians.html">Nebulians</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="#bottom" class="action_btn">Get Started</a>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nebulians.html">Nebulians</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#bottom" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>
+                A small step towards new change.
+            </p>
+        </section>
+    </main>
+    <!--Navigation bar script-->
+    <script>
+        const togglebtn = document.querySelector('.toggle')
+        const togglebtnicon = document.querySelector('.toggle i')
+        const dropdownmenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+        }
+    </script>
+
+  
+
+    
+    <section id="bottom">
+        <div class="patron"><h1>Our Patrons</h1><hr></div>
+        <div class="profile">
+            <div class="card">
+            <img src="nishant.jpg" alt="Nishant" style="width:100%">
+            <h1>Nishant Raj</h1>
+            <p class="title">Founder & Assist. Web Developer</p>
+            <p>BPMCE, Madhepura</p>
+            <a href="https://github.com/nishantcoder" target="_blank"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>
+          <div class="card">
+            <img src="shubham.jpg" alt="Shubham" style="width:100%">
+            <h1>Shubham Kumar</h1>
+            <p class="title">Senior Web Developer</p>
+            <p>BPMCE, Madhepura</p>
+            <a href="https://github.com/shubudeveloper" target="_blank"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>
+          <div class="card">
+            <img src="saurav.jpg" alt="Saurav" style="width:100%">
+            <h1>Saurav Kumar</h1>
+            <p class="title">Assist. Web Developer</p>
+            <p>BPMCE, Madhepura</p>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>
+
+          <div class="card">
+            <img src="suhani.jpg" alt="Suhani" style="width:100%">
+            <h1>Suhani Kumari</h1>
+            <p class="title">Assist. Web Developer</p>
+            <p>BPMCE, Madhepura</p>
+            <a href="https://github.com/suhanicoder" target="_blank"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>          
+        </div>
+
+        <div class="profile">
+            <div class="card">
+            <img src="kriti.jpg" alt="kriti" style="width:100%">
+            <h1>Kriti Kumari</h1>
+            <p class="title">Fresher </p>
+            <p>BPMCE, Madhepura</p>
+            <a href="https://github.com/kriticoders" target="_blank"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>
+          <div class="card">
+            <img src="samina.webp" alt="Samina" style="width:100%">
+            <h1>Samina Yasmin</h1>
+            <p class="title">Associate cum Data Operator</p>
+            <p>BPMCE, Madhepura</p>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <p><button>Contact</button></p>
+          </div>     
+        </div>
+        
+          
+        <div class="intro">
+            <div class="nhead">-: About Nebula Coders :-</div>
+            Nebula Coders are the group of 7 Students from the B. P. Mandal College Of Engineering, Madhepura. Our
+            College is recognized under AICTE and
+            affiliated to Bihar Engineering University, Patna. We are updating ourself daily in this progressing World.
+            We have students from
+            Computer Science Department and Electronics Departments. Our skills are C,OOPS in Python and C++, Arduino
+            Progarmming, Embedded Systems, database in MySQL and SQLite, PHP, WebDevelopement and
+            its updating each day. Our main vision is to get ourselves skilled so that in near future our members
+            achieve higher positions in different MNCs and Indian Companies.
+            <br><br>
+            Thank You!
+
+        </div>
+
+        <div class="notice">
+            <div class="nhead">-: NOTICES :-</div>
+            <div class="letter"><a href="Nebula Purchase Bill.pdf" download>
+                <img src="new.gif" height="40" width="50" />
+                Regarding the details Equipments purchased for Embedded Learning in April Month&nbsp;Dated: 19
+                April 2024
+            </a></div>
+            <div class="letter"><a href="Nebula Purchase Bill.pdf" download>
+                    
+                    Regarding the details of payment for Equipments purchased for Embedded Learning &nbsp;Dated: 29
+                    March 2024
+                </a></div>
+            <div class="letter"><a href="Letter no Nebula 006 Revised.pdf" download>
+                    Regarding the purchase of Equipments for Embedded Learning &nbsp;Dated: 27 March 2024
+                </a></div>
+            <div class="letter">
+                <a href="Letter no Nebula 005.pdf" download>
+                    Regarding the payment of Equipments and Exemption of payment from Ms. kriti Kumari &nbsp;Dated: 18
+                    March 2024
+                </a>
+            </div>
+            <div class="letter">
+                <a href="Letter no Nebula 004.pdf" download>
+                    Regarding the Workshop/Internship for Nebulians Only &nbsp;Dated: 10 March 2024
+                </a>
+            </div>
+            <div class="letter"> <a href="Letter no Nebula 003F.pdf" download>
+                    Regarding Payment Portal for Nebulians &nbsp;Dated: 10 March 2024
+                </a></div>
+            <div class="letter"> <a href="Letter no Nebula 002.pdf" download>
+                    Venue for the Experiments to be performed in April 2024 &nbsp;Dated: 10 March 2024
+                </a></div>
+            <div class="letter"> <a href="Letter no Nebula 001.pdf" download>
+                    Regarding the list of Experiments to be performed in April 2024 &nbsp;Dated: 10 March 2024
+                </a></div>
+        </div>
+    </section>
+
+
+
+
+    <div class="founder">
+
+        <div class=nhead>-: Founder Desk :-<br></div>
+
+        <p class="desk">
+            We at Nebula Coders believe in practical knowledge, in-depth or hands-on experiences rather than the bookish
+            theortical knowledge.
+            Idea of Nebula Coders Pop-up in my mind from NEBULA present in the universe. In this generation of
+            Artificial Intelligences like Gemini,Bing,GPT4, we believe in having
+            the real world knowledge in the field of embedded Systems. I believe that embedded systems is the one who is
+            controlling the maximum of world. We see embedded programmed gadgets from
+            smartwatches to boilers and from cars to railways; Embedded systems is everwhere. We should look about
+            embedded systems and its real world applications and try to find the scope in the field of
+            embedded systems.<br>
+            -Nishant Raj
+        </p>
+    </div>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h2>Nebula Coders <div class="underline"><span></span></div></h2>
+                <h3>Mon-Sat(10:00AM to 05:00PM)</h3>
+                <br>
+                <h3>Address</h3>
+                <p>B. P. Mandal College Of Engineering</p>
+                <p>Madhepura - 852128</p>
+                <p>Bihar, India</p>
+            </div>
+            
+
+            <div class="col">
+                <h2>Links<div class="underline"><span></span></div></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nebulians</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Newsletter<div class="underline"><span></span></div></h2>
+                <form onsubmit="emailsend();reset();return false;" class="newsletterform">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                    <input type="email" placeholder="Enter Your email id" id="emailfield" required >
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30">
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </button>
+                </form>
+                <div class="socialicon">
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Map<div class="underline"><span></span></div></h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.175848010674!2d86.7959344111464!3d25.96227260019281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee36d1a1bf4b45%3A0xd0d19cdb17887f59!2sB.%20P.%20Mandal%20College%20of%20Engineering%20Madhepura!5e0!3m2!1sen!2sin!4v1712725908070!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p>
+</footer>
+
+<script>
+    var loader=document.getElementById("preloder");
+    window.addEventListener("load",function()
+{
+    loader.style.display="none";
+})
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="newsletter.js"></script>
+</body>
+
+</html>
