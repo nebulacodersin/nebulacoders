@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="logout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Admin Home</title>
+</head>
+
+<body>
+  <h1>Nebula Coders</h1>
+  <h4>Admin Home Page</h4>
+  <br>
+<button class="logout-btn"> <img src="logout.png"> </button>
+  <h3>Engineering</h3>
+  <div class="notes">
+    <div class="list"><a href="COA 2023.pdf" download>BEU Computer Organization and architecture 2023</a>
+    </div>
+    <div class="list"><a href="DAA 2023.pdf" download>BEU Design Analysis and Algorithm 2023</a></div>
+    <div class="list"><a href="Digital Electronics 2023.pdf" download>BEU Digital Electronics 2023</a></div>
+    <div class="list"><a href="Discrete 2023.pdf" download>BEU Discrete Mathematics 2023</a></div>
+    <div class="list"><a href="HRDOB 2023.pdf" download>BEU HRD&OB 2023</a></div>
+    <div class="list"><a href="OS 2023.pdf" download>BEU Operating Systems 2023</a></div>
+  </div>
+  <br><br>
+  <h3>BPMCE Madhepura</h3>
+  <div class="notes">
+    <div class="list"><a href="105-CSE4thSEM Syllabus.pdf" download>Computer Science & Engineering 4th
+        semester new syllabus 105</a></div>
+    <div class="list"><a href="Mid Sem 128.pdf" download>BPMCE - 128 Mid semester 4th Semester Questions</a>
+    </div>
+  </div>
+
+  <hr>
+  <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p>
+  <script>
+    const logoutBtn = document.querySelector(".logout-btn")
+
+    logoutBtn.addEventListener("click", () => {
+      window.location.replace("login.html")
+    })
+    function timeoutfn(){
+      window.location.replace("login.html")
+    }
+    var timeout=setTimeout(timeoutfn,600000);
+  </script>
+</body>
+
+</html>

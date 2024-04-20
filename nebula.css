@@ -10,8 +10,15 @@ html{
 }
 
 /*Preloader*/
+#preloder{
+    background: #000000  no-repeat center center;
+    height: 120vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 #loader{
-    padding:350px 900px;
+    padding:250px 50%;
     display:flex;
     position:relative;
 }
@@ -73,29 +80,18 @@ html{
         transform:rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
 }
+.text{
+    width:50%;
+    margin-left:20%;
+}
 
-@media (max-width:492px){
-    body{
-        width:100%;
-    }
-
-    #loader-1{
-        margin-left:-200px;
-        height:300px;
-        width:300px;
-    }
-
-    #loader-1:nth-child(1){
-        border-color:2px solid #02fefa;
-    }
-    
-    #loader-1:nth-child(2){
-        border-color:2px solid #ff00a2;
-    }
-    
-    #loader-1:nth-child(3){
-        border-color:2px solid #ff4800;
-    }
+.text h1{
+    color:#02fefa;
+    padding:60px 360px;
+    font-size:45px;
+    background:linear-gradient(90deg,#02fefa,#ff00a2,#ff4800);
+    color:transparent;
+    background-clip:text;
 }
 /*Preloader End*/
 
