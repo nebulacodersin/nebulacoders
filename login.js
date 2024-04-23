@@ -33,7 +33,10 @@ function authentication(username,password){
     else if(username === "23105128903" && password === "30052003"){
         return true
     }
-    else if(username === "22105128902" && password === "30052003"){
+    else if(username === "yasmin" && password === "samina"){
+        return true
+    }
+    else if(username === "22110128013" && password === "jiyaraj"){
         return true
     }
     else{
