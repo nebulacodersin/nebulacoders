@@ -7,10 +7,13 @@
 
 html{
     width:100%;
-    background: linear-gradient(#ffdad5,#fff7f9);
+    background: linear-gradient(#d2f4f0,#fff7f9);
     background-repeat:no-repeat;
 }
-
+.arduino{
+    height: 20%;
+    width: 30%;
+}
 h1{
     text-align: center;
     font-size:35px;
@@ -18,8 +21,8 @@ h1{
 }
 h3{
     font-size: 20px;
-    color:orange;
-    background-color: antiquewhite;
+    color:rgb(0, 0, 0);
+    background-color: rgb(189, 236, 249);
 }
 h4{
     text-align: center;
@@ -48,7 +51,7 @@ hr{
 .copyright{
     text-align: center;
 }
-.logout-btn,img{
+.logout-btn,.logout{
     padding-left: 90%;
     background: none;
     height: 50px;
@@ -57,11 +60,15 @@ hr{
 }
 @media(max-width:576px)
 {
-    .logout-btn,img{
+    .logout-btn,.logout{
         padding-left:80%;
     }
     .list{
         padding-top: 5%;
+    }
+    .arduino{
+        height:100px;
+        width: 50%;
     }
    
 
