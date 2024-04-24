@@ -12,7 +12,7 @@ html{
 /*Preloader*/
 #loader{
     background: #ffffff url(loader1.gif) no-repeat center center;
-    background-size: 50%;
+    background-size: 10%;
     height: 120vh;
     width: 100%;
     z-index: 100;
@@ -194,7 +194,7 @@ section#hero{
 /*Cards View*/
 .patron h1{
     justify-content: center;
-    text-align: center;
+    text-align: c   enter;
     font-size: 40px;
     color:#f66517;
 }
