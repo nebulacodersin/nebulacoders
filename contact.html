@@ -8,33 +8,35 @@
     <title>Nebula Coders</title>
 </head>
 <body>
+    <div id="loader"></div>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#">NEBULA CODERS</a></div>
+            <div class="logo"><a href="index.html">NEBULA CODERS</a></div>
 
 
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Nebulians</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="nebulians.html">Nebulians</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="#" class="action_btn">Get Started</a>
+            <a href="login.html" class="action_btn">Admin Login</a>
             <div class="toggle">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
         <div class="dropdown_menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Nebulians</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#" class="action_btn">Get Started</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nebulians.html">Nebulians</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="action_btn">Admin Login</a></li>
         </div>
     </header>
     <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
         const togglebtn = document.querySelector('.toggle')
         const togglebtnicon = document.querySelector('.toggle i')
         const dropdownmenu = document.querySelector('.dropdown_menu')
@@ -81,11 +83,11 @@
         <div class="col">
             <h2>Links<div class="underline"><span></span></div></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nebulians</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nebulians.html">Nebulians</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
         <div class="col">
@@ -101,11 +103,10 @@
                 </button>
             </form>
             <div class="socialicon">
-                <i class="fa fa-whatsapp"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-envelope"></i>
-                <i class="fa fa-github"></i>
-                <i class="fa fa-twitter"></i>
+                <a href="https://whatsapp.com/channel/0029VabBpQ0F1YlOpPttv23J" target="_blank"><i class="fa fa-whatsapp"></i></a>   
+                 <a href="https://www.instagram.com/nebulacoders/" target="_blank"><i class="fa fa-instagram"></i></a>   
+                 <a href="mailto:nebulacodersbpmce+web@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>    
+                 <a href="https://www.youtube.com/@NebulaCoders2024" target="_blank"> <i class="fa fa-youtube-play"></i></a> 
             </div>
         </div>
         <div class="col">
@@ -120,7 +121,16 @@
     <hr>
     <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p>
 </footer>
-
+<script>
+    var loader=document.getElementById("loader");
+    window.addEventListener("load",function()
+{
+    loader.style.display="none";
+})
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="newsletter.js"></script>
 
 </body>
 </html>

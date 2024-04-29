@@ -97,7 +97,7 @@ body {
 }
 
 .dropdown_menu.open {
-    height: 240px;
+    height: 280px;
 }
 
 .dropdown_menu li {
@@ -344,7 +344,6 @@ iframe{
     .contact-right{
         display: none;
     }
-    
 }
 
 @media(max-width:576px)
@@ -356,7 +355,7 @@ iframe{
     .profile{
         flex-direction: column;
         justify-content: space-between;
-    }
+    }   
 
 }
 

@@ -1,35 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="nebula.css">
-    <title>Nebula Coders</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>About Us</title>
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="logo.png" height="120" width="100"/>
-        </div>
-        <div class="nebula">NEBULA CODERS</div>
+    <div id="loader"></div>
+
+    <header>
         
-    </div>
-    <div class="option">
-        <div class="list">
-        <span class="pages1">Home</span>
-        <span class="pages2">Nebulians</span>
-        <span class="pages3">Projects</span>
-        <span class="pages4">About Us</span>
-        <span class="pages5">Contact Us</span>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">NEBULA CODERS</a></div>
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nebulians.html">Nebulians</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="login.html" class="action_btn">Admin Login</a>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nebulians.html">Nebulians</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="action_btn">Admin Login</a></li>
+        </div>
+    </header>
+
+    <!--Navigation bar script-->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        const togglebtn = document.querySelector('.toggle')
+        const togglebtnicon = document.querySelector('.toggle i')
+        const dropdownmenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+        }
+    </script>
+
+  
+    <!--Start here-->
+
+    
+    <div class="container">
+        <div class="card">
+            <div class="patron"><h1>About Nebula</h1><hr></div>
+            <p>
+                A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. For this reason, some nebulae are called "star nurseries."
+                Nebulae are made of dust and gases—mostly hydrogen and helium. The dust and gases in a nebula are very spread out, but gravity can slowly begin to pull together clumps of dust and gas. As these clumps get bigger and bigger, their gravity gets stronger and stronger.
+
+            </p><br><br>
+        </div>
+        <div class="card">
+            <div class="patron"><h1>About Nebula Coders</h1><hr></div>
+            <p>
+                Nebula Coders are the group of 7 Students from the B. P. Mandal College Of Engineering, Madhepura. Our College is recognized under AICTE and affiliated to Bihar Engineering University, Patna. We are updating ourself daily in this progressing World.
+                 We have students from Computer Science Department and Electronics Departments. Our skills are C,OOPS in Python and C++, Arduino Progarmming, Embedded Systems, database in MySQL and SQLite, PHP, WebDevelopement and its updating each day. 
+                 Our main vision is to get ourselves skilled so that in near future our members achieve higher positions in different MNCs and Indian Companies.
+            </p><br><br>
         </div>
     </div>
 
-    <!--Start from here-->
-    
+    <div class="container">
+        <div class="card">
+            <div class="patron"><h1>Our Logo</h1><hr></div>
+            <p>
+                Nebula Coders, a group aimed at students with a passion for technology across various domains, from web development to embedded systems, deserves a logo that reflects its multifaceted approach.
 
-    <!--End here-->
+                
+            </p><br><br>
+        </div>
+        <div class="card">
+            <div class="patron"><h1>Founder Says</h1><hr></div>
+            <p>
+                We at Nebula Coders believe in practical knowledge, in-depth or hands-on experiences rather than the bookish
+                theortical knowledge.
+                Idea of Nebula Coders Pop-up in my mind from NEBULA present in the universe. In this generation of
+                Artificial Intelligences like Gemini,Bing,GPT4, we believe in having
+                the real world knowledge in the field of embedded Systems. I believe that embedded systems is the one who is
+                controlling the maximum of world. We see embedded programmed gadgets from
+                smartwatches to boilers and from cars to railways; Embedded systems is everwhere. We should look about
+                embedded systems and its real world applications and try to find the scope in the field of
+                embedded systems.
+                <br><br><br>
+                <b><i><h3>"Theortical knowledge is good at one place,but Real learning starts when you starts experiencing."</h3>  <br> <right>Nishant Raj</right> </i></b>
+            </p><br><br>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="patron"><h1>Developers Says</h1><hr></div>
+            <p>
+                The programming world is booming! New frameworks, languages, and tools emerge constantly, exciting but overwhelming. 
+                Web development alone has exploded with frameworks like React and Node.js, requiring a vast skillset compared to the simpler days of HTML and PHP.
+                Mobile development is a whirlwind of native apps, cross-platform options, and PWAs. Tooling changes rapidly, keeping developers on their toes. Embedded systems, 
+                the silent powerhouses behind our smart homes and future cars, demand optimized code for limited resources.
+            </p><br><br>
+        </div>
+        <div class="card">
+            <div class="patron"><h1>Core Community</h1><hr></div>
+            <p>
+                The community, <strong>Nebula Coders</strong> is found in the year 2024 (Present). It is one of the platform where we can show our talent. We are doing our work 
+                sincerely and trying to give our best. Also, our teams are doing their work in such a way that it will be a part of start-up. Our team members are working on 
+                aurdino programming. Our main aim to achieve our goal by gaining practical knowledgw and its practical execution as practical knowlwdgw is more important than 
+                theoretical knowledge.
+            </p><br><br>
+        </div>
+    </div>
+
+    <!--End Here-->
+
     <footer>
-        Under WebDevelopement
-    </footer>
+        <div class="row">
+            <div class="col">
+                <h2>Nebula Coders <div class="underline"><span></span></div></h2>
+                <h3>Mon-Sat(10:00AM to 05:00PM)</h3>
+                <br>
+                <h3>Address</h3>
+                <p>B. P. Mandal College Of Engineering</p>
+                <p>Madhepura - 852128</p>
+                <p>Bihar, India</p>
+            </div>
+            
+
+            <div class="col">
+                <h2>Links<div class="underline"><span></span></div></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nebulians.html">Nebulians</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Newsletter<div class="underline"><span></span></div></h2>
+                <form onsubmit="emailsend();reset();return false;" class="newsletterform">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                    <input type="email" placeholder="Enter Your email id" id="emailfield" required >
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30">
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </button>
+                </form>
+                <div class="socialicon">
+                 <a href="https://whatsapp.com/channel/0029VabBpQ0F1YlOpPttv23J" target="_blank"><i class="fa fa-whatsapp"></i></a>   
+                 <a href="https://www.instagram.com/nebulacoders/" target="_blank"><i class="fa fa-instagram"></i></a>   
+                 <a href="mailto:nebulacodersbpmce+web@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>    
+                 <a href="https://www.youtube.com/@NebulaCoders2024" target="_blank"> <i class="fa fa-youtube-play"></i></a>  
+                </div>
+            </div>
+            <div class="col">
+                <h2>Map<div class="underline"><span></span></div></h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.175848010674!2d86.7959344111464!3d25.96227260019281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee36d1a1bf4b45%3A0xd0d19cdb17887f59!2sB.%20P.%20Mandal%20College%20of%20Engineering%20Madhepura!5e0!3m2!1sen!2sin!4v1712725908070!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p>
+</footer>
+
+
+<script>
+    var loader=document.getElementById("loader");
+    window.addEventListener("load",function()
+{
+    loader.style.display="none";
+})
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="newsletter.js"></script>
 </body>
+
 </html>
+

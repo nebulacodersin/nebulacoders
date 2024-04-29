@@ -1,11 +1,10 @@
-* {
+*{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'Open Sans','sans-serif';
 }
-
-html {
+html{
     background: linear-gradient(#ffdad5,#fff7f9);
     width: 100%;
 }
@@ -21,6 +20,7 @@ html {
 }
 
 
+
 /*Preloader End*/
 .navbar .links a{
     color:#ff7f50;
@@ -28,33 +28,30 @@ html {
 .navbar .links a:hover{
     color:whitesmoke;
 }
-li {
+li{
     list-style: none;
 }
-
-a {
+a{
     text-decoration: none;
-    color: #ff8848;
-    font-size: 1rem;
+    color:#f66517;
+    font-size:1rem;
+}
+a:hover{
+    color:white;
 }
 
-a:hover {
-    color: #ff7f50;
-}
-
-header {
+header{
     position: relative;
     padding: 0 2rem;
-
+    
 }
-
-body {
+body{
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: center;   
 }
 
-.navbar {
+.navbar{
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -63,72 +60,62 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-.navbar .logo a {
+.navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-.navbar .links {
+.navbar .links{
     display: flex;
-    gap: 2rem;
+    gap:2rem;
 }
-
-.navbar .toggle {
-    color: #f66517;
+.navbar .toggle{
+    color:#f66517;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor:pointer;
     display: none;
 }
-
-.action_btn {
+.action_btn{
     background-color: orange;
-    color: #fff;
+    color:white;
     padding: 0.5rem 1rem;
-    border: none;
+    border:none;
     outline: none;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor:pointer;
     transition: scale 0.2 ease;
 }
-
-.action_btn:hover {
+.action_btn:hover{
     scale: 1.05;
-    color: #fff;
+    color:#fff;
 }
-
-.action_btn:active {
+.action_btn:active{
     scale: 0.95;
 }
-
-.dropdown_menu {
+.dropdown_menu{
     position: absolute;
     right: 2rem;
-    top: 60px;
+    top:60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition:  height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.dropdown_menu.open {
+.dropdown_menu.open{
     height: 280px;
 }
-
-.dropdown_menu li {
-
+.dropdown_menu li{
+    
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.dropdown_menu .action_btn {
+.dropdown_menu .action_btn{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -137,124 +124,59 @@ body {
 
 
 /*Start here*/
-.patron{
-    background: whitesmoke;
-}
-.patron h1 {
+.patron h1{
     justify-content: center;
     text-align: center;
-    font-size: 35px;
-    color: #f66517;
+    font-size: 40px;
+    color:#f66517;
 }
-
-.patron hr {
-
+.patron hr{
     justify-content: center;
     height: 15px;
     width: 18%;
-    color: #ff5731;
+    color:#ff5731;
     border-radius: 50px;
     background: #f66517;
 }
-
-.container {
-    padding: 5% 5%;
+.container{
+    width: 100%;
     display: flex;
-    background-color: whitesmoke;
+    padding: 1% 1%;
+    background-color: #fff;
+    justify-content: space-between;
 }
-
-.box {
-    padding: 1% 2%;
+.container .card {
+    background: white;
+    width: 50%;
+  
+    border-radius: 10px;
+    padding: 1% 1%;
+    margin-left: 1%;
 }
-
-.box .utube {
-    width: 85%;
-    height: 180px;
-    justify-content: center;
-}
-
-.box .alter {
-    width: 80%;
-    height: auto;
-    text-align: center;
-    color: #ff7f50;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.wrapper{
+.container .card:hover{
     background: whitesmoke;
-    padding: auto;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.container .card p{
+    font-size: 18px;
+    color:#f66517;
+}
 
-}
-.image{
-    padding: 1% 1%;
-    width: 100%;
-    position: relative;
-}
-img{
-   width: 100%;
-   display: block;
-   margin: auto; 
-   border-radius: 2.5%;
-}
-.content{
-    padding: 1% 1%;
-    border-radius: 2.5%;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    position: absolute;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-}
-.content:hover{
-    opacity: 1;
-}
-.content h1{
-    font-size: 25px;
-    color:#ff7f50;
-    margin-bottom: 15px;
-}
-.content p{
-    text-align: center;
-    font-size: 15px;
-    color:#fff;
-}
-.content>*{
-    transform: translateY(25px);
-    transition: transform 0.6s;
-}
-.content:hover>*{
-    transform: translateY(25px);
-    transition: transform 0.6s;
-}
+
 /*Body end here*/
 
 
 /*Footer Section*/
-footer {
+footer{
     width: 100%;
     position: absolute;
-    background: linear-gradient(to right, #ff7f50, #dc143c);
-    color: #fff;
+    background: linear-gradient(to right,#ff7f50,#dc143c);
+    color:#fff;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
 }
 
-.row {
+.row{
     width: 85%;
     margin: auto;
     display: flex;
@@ -262,33 +184,27 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 }
-
-.col {
+.col{
     flex-basis: 25%;
     padding: 10px;
 }
-
-.col h2 {
+.col h2{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
 }
-
-.col:nth-child(2) {
+.col:nth-child(2){
     flex-basis: 15%;
 }
-
-ul li {
+ul li{
     list-style: none;
     margin-bottom: 12px;
 }
-
-ul li a {
+ul li a{
     text-decoration: none;
-    color: #fff;
+    color:#fff;
 }
-
-.newsletterform {
+.newsletterform{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -296,159 +212,171 @@ ul li a {
     border-bottom: 1px solid #fff;
     margin-bottom: 50px;
 }
-
-.newsletterform svg {
+.newsletterform svg{
     font-size: 1px;
-    margin-right: 10px;
-    fill: #fff;
+    margin-right:10px;
+    fill:#fff;
 }
-
-.newsletterform input {
+.newsletterform input{
     width: 100%;
     background: transparent;
-    color: #fff;
+    color:#fff;
     border: 0;
     outline: none;
 }
-
-.newsletterform input::placeholder {
-    color: #fff;
+.newsletterform input::placeholder{
+    color:#fff;
 }
-
-.newsletterform button {
-    background: transparent;
-    border: 0;
+.newsletterform button{
+    background:transparent ;
+    border:0;
     outline: none;
     cursor: pointer;
 }
-
-.newsletterform button svg {
+.newsletterform button svg{
     font-size: 15px;
-    color: #fff;
+    color:#fff;
 }
 
-.socialicon .fa {
-    width: 40px;
+.socialicon .fa{
+    width:40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
+    color:#000;
     background-color: #fff;
     margin-right: 15px;
     cursor: pointer;
 
 }
-
-hr {
+hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid #fff;
     margin: 20px auto;
 }
-
-.copyright {
+.copyright{
     text-align: center;
 }
 
-.underline {
+.underline{
     width: 100%;
     height: 5px;
     background-color: #fff;
     border-radius: 3px;
     position: absolute;
-    top: 25px;
+    top:25px;
     overflow: hidden;
 }
-
-.underline span {
+.underline span{
     width: 15px;
     height: 100%;
-    background: #f66517;
+    background:#f66517;
     border-radius: 3px;
     position: absolute;
-    top: 0;
+    top:0;
     left: 10px;
     animation: moving 2s infinite;
 }
-
-iframe {
+iframe{
     height: 10%;
     width: 100%;
-    border-radius: 20px;
+    border-radius:20px;
 }
 
-.notice::-webkit-scrollbar {
-    width: 10px;
+.notice::-webkit-scrollbar{
+    width:10px;
 }
 
-.notice::-webkit-scrollbar-track {
-    background-color: #ff5731;
-    border-radius: 50px;
+.notice::-webkit-scrollbar-track{
+    background-color:#ff5731;
+    border-radius:50px;
 }
 
-.notice::-webkit-scrollbar-thumb {
-    cursor: pointer;
-    background-color: #ccc;
-    border-radius: 50px;
+.notice::-webkit-scrollbar-thumb{
+    cursor:pointer;
+    background-color:#ccc;
+    border-radius:50px;
 }
-
 @keyframes moving {
-    0% {
-        left: -20px;
+    0%{
+        left:-20px;
     }
-
-    100% {
+    100%{
         left: 100%;
     }
-
+    
 }
 
 /*Responsive Navigation*/
-@media(max-width:992px) {
+@media(max-width:992px){
+    html{
+        background: whitesmoke;
+    }
+    
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+
+    }
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col :nth-child(2)
+    {
+        flex-basis: 100%;
+    }
+    .profile,.external{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .profile .card{
+        column-width: 5%;
+
+    }
+    .external .cards a img{
+        border-radius: 15px;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+
+@media(max-width:576px)
+{
     html{
         background: white;
     }
-
-    .navbar .links,
-    .navbar .action_btn {
-        display: none;
+    .dropdown_menu{
+        left:2rem;
+        width:unset;
     }
-
-    .navbar .toggle {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-
-    }
-
-    footer {
-        bottom: unset;
-    }
-
-    .col {
-        flex-basis: 100%;
-    }
-
-    .col :nth-child(2) {
-        flex-basis: 100%;
-    }
-
-    .container,.wrapper {
+    .profile,.external{
         flex-direction: column;
+        justify-content: space-between;
+    }
+    .profile .card{
+        column-width: 5%;
+
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .card{
+        width: 100%;
     }
 }
 
-@media(max-width:576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
 
-    .container,.wrapper {
-        flex-direction: column;
-    }
-}

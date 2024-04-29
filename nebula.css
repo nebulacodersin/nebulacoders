@@ -165,7 +165,9 @@ section#hero{
     flex-direction: column;
 }
 
-
+#bottom .patron{
+        padding-top:2% ;
+    }
 .intro:hover,.notice:hover{
     background-color: whitesmoke;
 }
@@ -219,7 +221,7 @@ section#hero{
   max-width: 300px;
   margin: auto;
   text-align: center;
-  padding: 0.1%;
+  
 }
 .profile .card:hover{
     transform: scale(1.05);
@@ -232,7 +234,7 @@ section#hero{
   font-size: 18px;
 }
 
-.profile button {
+.profile .button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -262,7 +264,7 @@ button:hover, a:hover {
     height: auto;
     display: flex;
     row-gap: 5%;
-    justify-content: center;
+    justify-content: space-between;
 }
 .external:hover{
     background:whitesmoke;
@@ -272,7 +274,6 @@ button:hover, a:hover {
     border-radius: 15px;
     height: 150px;
     width: 300px;
-    justify-content: space-between;
     margin-left: 15px;
 }
 .external .cards a img:hover{
@@ -428,6 +429,33 @@ iframe{
 }
 
 /*Responsive Navigation*/
+@media(min-width:2160px)
+{
+    #bottom .patron{
+        padding-top:5% ;
+    }
+}
+@media(max-width:2160px) and (min-width:1440px)
+{
+    #bottom .patron{
+        padding-top:8% ;
+    }
+}
+@media(max-width:1440px)
+{
+    #bottom .patron{
+        padding-top:8% ;
+    }
+}
+
+@media(max-width:1330px)
+{
+    .profile,.external{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 @media(max-width:1028px){
     .navbar .links,
     .navbar .action_btn{
@@ -469,6 +497,9 @@ iframe{
 
 @media(max-width:576px)
 {
+    #bottom .patron{
+        padding-top:15% ;
+    }
     .dropdown_menu{
         left:2rem;
         width:unset;
