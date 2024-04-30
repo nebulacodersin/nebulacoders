@@ -40,7 +40,7 @@ header{
 }
 body{
     height: 100vh;
-    background-image: url('top.jpg');
+    background-image: url('nebula.gif');
     background-size: cover;
     background-position: center;   
 }
@@ -68,6 +68,7 @@ body{
     cursor:pointer;
     display: none;
 }
+
 .action_btn{
     background-color: orange;
     color:white;
@@ -116,20 +117,6 @@ body{
 
 }
 
-/*HERO*/
-section#hero{
-    height: calc(100vh- 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:#ffffff;
-}
-#hero h1{
-    margin-top: 26vh;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color:linear-gradient(#ffdad5,#fff7f9);
-}
 
 .header{
     font-size: 40px;
@@ -160,7 +147,7 @@ section#hero{
 
 }
 #bottom{
-    padding-top:55vh;
+    padding-top:86vh;
     display: flex;
     flex-direction: column;
 }
@@ -456,7 +443,7 @@ iframe{
     }
 }
 
-@media(max-width:1028px){
+@media(max-width:1023px){
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -478,22 +465,30 @@ iframe{
     {
         flex-basis: 100%;
     }
-    .profile,.external{
+    .profile{
         flex-direction: column;
         justify-content: space-between;
+    }
+    .external{
+        flex-direction: column;
+        justify-content: center;
     }
     .profile .card{
         column-width: 5%;
 
     }
     .external .cards a img{
+        justify-content: center;
+        align-items: center;
         border-radius: 15px;
         height: 150px;
-        width: 100%;
+        width: 70%;
         justify-content: center;
     }
     
 }
+
+
 
 @media(max-width:576px)
 {
@@ -504,13 +499,17 @@ iframe{
         left:2rem;
         width:unset;
     }
-    .profile,.external{
+    .profile{
         flex-direction: column;
         justify-content: space-between;
     }
     .profile .card{
         column-width: 5%;
 
+    }
+    .external{
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

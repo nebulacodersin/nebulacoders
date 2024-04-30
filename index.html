@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Nebula Coders</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
 <body>
@@ -26,11 +27,11 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
             <a href="login.html" class="action_btn">Admin Login</a>
-            <div class="toggle">
+            <div class="toggle" id="toggle">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-        <div class="dropdown_menu">
+        <div class="dropdown_menu" id="dropdown_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="nebulians.html">Nebulians</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -41,10 +42,11 @@
     </header>
 
     <main>
+        
         <section id="hero">
-            <h1>Welcome</h1>
+            <h1></h1>
             <p>
-                A small step towards new change.
+                
             </p>
         </section>
     </main>
@@ -59,13 +61,14 @@
             dropdownmenu.classList.toggle('open')
             const isOpen = dropdownmenu.classList.contains('open')
         }
+        
     </script>
 
   
 
     
     <section id="bottom">
-        <div class="patron"><h1>Our Patrons</h1><hr></div>
+        <div class="patron"><h1>Our Teams</h1><hr></div>
         <div class="profile">
             <div class="card">
             <img src="nishant.jpg" alt="Nishant" style="width:100%">
@@ -246,11 +249,13 @@
             </div>
             <div class="col">
                 <h2>Newsletter<div class="underline"><span></span></div></h2>
-                <form onsubmit="emailsend();reset();return false;" class="newsletterform">
+                <form action="https://api.web3forms.com/submit" method="POST"  class="newsletterform">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30">
                         <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
                     </svg>
-                    <input type="email" placeholder="Enter Your email id" id="emailfield" required >
+                    <input type="hidden" name="access_key" value="fa4cf571-40bd-4b91-a1bf-ce13f11a4c46">
+           
+                    <input type="email" name="email" placeholder="Enter Your email id" id="emailfield" required >
                     <button type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30">
                             <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -283,9 +288,7 @@
     loader.style.display="none";
 })
 </script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script src="newsletter.js"></script>
+
 </body>
 
 </html>
