@@ -5,11 +5,22 @@
     font-family: 'Open Sans','sans-serif';
 }
 html{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255,255,255);
     width: 100%;
 }
 
-/*Navigation Panel Start*/
+/*Preloader*/
+
+#loader{
+    background: #ffffff url(loader1.gif) no-repeat center center;
+    background-size: 10%;
+    height: 120vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+/*Preloader End*/
 
 li{
     list-style: none;
@@ -29,10 +40,23 @@ header{
     
 }
 body{
-    height: 100vh;
-    background-color: white;
+    height: 150vh;
     background-size: cover;
     background-position: center;   
+}
+body::-webkit-scrollbar{
+    width:5px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color:#ff7f50;
+    border-radius:50px;
+}
+
+body::-webkit-scrollbar-thumb{
+    cursor:pointer;
+    background-color:#ffffff;
+    border-radius:50px;
 }
 
 .navbar{
@@ -72,7 +96,7 @@ body{
 }
 .action_btn:hover{
     scale: 1.05;
-    color:#fff;
+    color:#cc2222;
 }
 .action_btn:active{
     scale: 0.95;
@@ -83,14 +107,14 @@ body{
     top:60px;
     height: 0;
     width: 300px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(233, 100, 24, 0.8);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition:  height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-    height: 240px;
+    height: 280px;
 }
 .dropdown_menu li{
     
@@ -105,13 +129,168 @@ body{
     justify-content: center;
 
 }
-/*Navigation Panel end*/
+
+
+/*Start here*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #f1e8e8;
+
+}
+
+h1{
+    text-align: center;
+    color:#ff9419;
+    font-size: 35px;
+    padding-top: 5%;
+}
+.container{
+    padding: 5% 5%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+   
+}
+
+.wrapper{
+    padding: 2% 2%;
+    justify-content: center;
+    height: auto;
+    display: flex;
+}
+.card{
+    padding: 3% 3%;
+    justify-content: center;
+    border:orange solid 3px;
+    width: 5%;
+    height: 700px;
+    border-radius: 50px;
+    display: flex;
+    margin-left:2%;
+    cursor: pointer;
+    transition: .6s cubic-bezier(.28, -0.03, 0,.99);
+    box-shadow: 0px 10px 15px 2px rgba(233, 100, 24, 0.8);
+
+}
+
+.container .wrapper .card .about{
+    display: none;
+    padding-top: 30%;
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+
+}
+.about h1{
+    animation: name 2s steps(40,end) infinite;
+    letter-spacing: 3px;
+    color:#00ffff;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes name {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.about p{
+    padding-top:5% ;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color:#fff;
+    font-weight:bold ;
+}
+.card:hover{
+    transition: all 0.7s ease;
+    width: 40%;
+}
+.container .card:hover .about{
+    display: block;
+}
+#n1{
+    background: url(suhani.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n2{
+    background:url(nishant.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n3{
+    background:url(jiya.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n4{
+    background:url(shubham.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n5{
+    background:url(saurav.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n6{
+    background:url(kriti.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#n7{
+    background:purple;
+    background-size: cover;
+    background-position: center;
+}
+.circle{
+    background: rgb(255, 167, 4);
+    border-radius: 50px;
+    font-size: 30px;
+    height: 30px;
+    color:white;
+    text-align: left;
+}
+
+@media(max-width:1020px)
+{
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper .card{
+        height: 50px;
+        width: 100%;
+    }
+    .wrapper .card:hover{
+        height: 600px;
+    }
+    .about h1{
+        animation: none;
+    }
+}
+@media(max-width:545px)
+{
+    .about h1{
+        font-size: 30px;
+    }
+}
 
 
 
+/*Body end here*/
 
 
-/*Footer*/
+/*Footer Section*/
 footer{
     width: 100%;
     position: absolute;
@@ -231,10 +410,21 @@ iframe{
     width: 100%;
     border-radius:20px;
 }
-/*footer End*/
 
+.notice::-webkit-scrollbar{
+    width:10px;
+}
 
+.notice::-webkit-scrollbar-track{
+    background-color:#ff5731;
+    border-radius:50px;
+}
 
+.notice::-webkit-scrollbar-thumb{
+    cursor:pointer;
+    background-color:#ccc;
+    border-radius:50px;
+}
 @keyframes moving {
     0%{
         left:-20px;
@@ -267,7 +457,22 @@ iframe{
     .col :nth-child(2)
     {
         flex-basis: 100%;
-    }    
+    }
+    .profile,.external{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .profile .card{
+        column-width: 5%;
+
+    }
+    .external .cards a img{
+        border-radius: 15px;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+    }
+    
 }
 
 @media(max-width:576px)
@@ -276,10 +481,14 @@ iframe{
         left:2rem;
         width:unset;
     }
-    .profile{
+    .profile,.external{
         flex-direction: column;
         justify-content: space-between;
     }
+    .profile .card{
+        column-width: 5%;
 
+    }
 }
+
 

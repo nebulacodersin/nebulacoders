@@ -7,50 +7,49 @@
     <link rel="stylesheet" type="text/css" href="nebulians.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Nebula Coders</title>
+    <title>Nebulians</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QMDKNKPVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2QMDKNKPVC');
+</script>
 
 <body>
-    <div id="preloder">
-        <div id="loader">
-            <div id="loader-1"></div>
-            <div id="loader-1"></div>
-            <div id="loader-1"></div>
-        </div>
-        <div class="text">
-            <h1>WELCOME</h1>
-        </div>
-    </div>
-
+    <div id="loader"></div>
     <header>
         <div class="navbar">
             <div class="logo"><a href="#">NEBULA CODERS</a></div>
 
-
             <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Nebulians</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html"><font face="arial" color=#ff7f50 size="5">Home</font></a></li>         
+                <li><a href="nebulians.html"><font face="arial" color=#ff7f50 size="5">Nebulians</font></a></li>
+                <li><a href="gallery.html"><font face="arial" color=#ff7f50 size="5">Gallery</font></a></li>
+                <li><a href="about.html"><font face="arial" color=#ff7f50 size="5">About Us</font></a></li>
+                <li><a href="contact.html"><font face="arial" color=#ff7f50 size="5">Contact Us</font></a></li>
             </ul>
-            <a href="#" class="action_btn">Get Started</a>
+            <a href="login.html" class="action_btn">Admin Login</a>
             <div class="toggle">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
         <div class="dropdown_menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Nebulians</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#" class="action_btn">Get Started</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nebulians.html">Nebulians</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="action_btn">Admin Login</a></li>
         </div>
     </header>
 
     <!--Navigation bar script-->
     <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
         const togglebtn = document.querySelector('.toggle')
         const togglebtnicon = document.querySelector('.toggle i')
         const dropdownmenu = document.querySelector('.dropdown_menu')
@@ -59,9 +58,112 @@
             dropdownmenu.classList.toggle('open')
             const isOpen = dropdownmenu.classList.contains('open')
         }
-    </script>  
-    </section>
-    
+    </script>
+
+  
+    <!--Start here-->
+ 
+        <h1>
+            Nebulians - Core Members
+        </h1>
+        <div class="container">
+            <div class="wrapper">
+                <div class="card" id="n1">
+                    <div class="circle">1</div><br>
+                    <div class="about">
+                        <h1>Suhani Kumari</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: 8.54<br><br>
+                        <b> <i> "While there's life there's hope" </i> </b>
+                        
+                    </p>
+                    </div>
+                    
+                </div>
+                <br><br>
+                <div class="card" id="n2">
+                    <div class="circle">2</div><br>
+                    <div class="about">
+                        <h1>Nishant Raj</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: 8.84<br><br>
+                        <b> <i> "Theory is good at one place, but real learning starts when you starts experiencing." </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card" id="n3">
+                    <div class="circle">3</div><br>
+                    <div class="about">
+                        <h1>Jiya Raj</h1>
+                    <p>
+                        Electrical  & Electronics Engineering <br>
+                        Current SGPA: 9.11<br><br>
+                        <b> <i> "If you criticise today then just change your attitude a little thing that makes a big difference believe me you will be praise by the same" </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card" id="n4">
+                    <div class="circle">4</div><br>
+                    <div class="about">
+                        <h1>Shubham Kumar</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: 7.57<br><br>
+                        <b> <i> "..." </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card" id="n5">
+                    <div class="circle">5</div><br>
+                    <div class="about">
+                        <h1>Saurav Kumar</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: 6.97<br><br>
+                        <b> <i> "..." </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card" id="n6">
+                    <div class="circle">6</div><br>
+                    <div class="about">
+                        <h1>Kriti Kumari</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: N/A<br><br>
+                        <b> <i> "Believing in yourself is the first secret to success </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="card" id="n7">
+                    <div class="circle">7</div><br>
+                    <div class="about">
+                        <h1>Samina Yasmin</h1>
+                    <p>
+                        Computer Science & Engineering <br>
+                        Current SGPA: N/A<br><br>
+                        <b> <i> "..." </i> </b>
+                        
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!--End Here-->
 
 
     <footer>
@@ -80,31 +182,32 @@
             <div class="col">
                 <h2>Links<div class="underline"><span></span></div></h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Nebulians</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nebulians.html">Nebulians</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h2>Newsletter<div class="underline"><span></span></div></h2>
-                <form onsubmit="emailsend();reset();return false;" class="newsletterform">
+                <form action="https://api.web3forms.com/submit" method="POST"  class="newsletterform">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30">
                         <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
                     </svg>
-                    <input type="email" placeholder="Enter Your email id" id="emailfield" required >
+                    <input type="hidden" name="access_key" value="fa4cf571-40bd-4b91-a1bf-ce13f11a4c46">
+           
+                    <input type="email" name="email" placeholder="Enter Your email id" id="emailfield" required >
                     <button type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30">
                             <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                     </button>
                 </form>
                 <div class="socialicon">
-                    <i class="fa fa-whatsapp"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-envelope"></i>
-                    <i class="fa fa-github"></i>
-                    <i class="fa fa-twitter"></i>
+                 <a href="https://whatsapp.com/channel/0029VabBpQ0F1YlOpPttv23J" target="_blank"><i class="fa fa-whatsapp"></i></a>   
+                 <a href="https://www.instagram.com/nebulacoders/" target="_blank"><i class="fa fa-instagram"></i></a>   
+                 <a href="mailto:nebulacodersbpmce+web@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>    
+                 <a href="https://www.youtube.com/@NebulaCoders2024" target="_blank"> <i class="fa fa-youtube-play"></i></a>  
                 </div>
             </div>
             <div class="col">
@@ -121,15 +224,13 @@
 </footer>
 
 <script>
-    var loader=document.getElementById("preloder");
+    var loader=document.getElementById("loader");
     window.addEventListener("load",function()
 {
     loader.style.display="none";
 })
 </script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script src="newsletter.js"></script>
 </body>
 
 </html>
+
