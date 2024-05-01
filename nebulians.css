@@ -249,7 +249,7 @@ h1{
     background-position: center;
 }
 #n7{
-    background:purple;
+    background:linear-gradient(#ffb8b8,#ff8165);
     background-size: cover;
     background-position: center;
 }
@@ -281,7 +281,15 @@ h1{
 @media(max-width:545px)
 {
     .about h1{
-        font-size: 30px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .about p{
+        font-size: 18px;
+    }
+    #n3 p{
+        line-height: 30px;
+    letter-spacing: 1.5px;
     }
 }
 
