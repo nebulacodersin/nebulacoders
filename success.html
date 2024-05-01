@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+<style>
+    html{
+        margin: 0%;
+        padding:0%;
+        box-sizing: border-box;
+    }
+    body{
+        background: linear-gradient(#e2d2d2,#fcf7f7);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .container{
+        padding-top: 10%;
+        background-position: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        justify-self: center;
+        height: 20%;
+        width: 20%;
+    }
+    .container .message{
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .container .message .end{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    @media(max-width:545px)
+    {
+        .container{
+            padding-top:20%;
+        }
+        img{
+            height: 30%;
+            width: 30%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="ok.svg" alt=""/>
+        <div class="message">
+            Thank You For Contacting Us. <br>
+            We will be in touch with you within 24 Working Hours.
+            <br>
+            <div class="end">Team Nebula</div>
+        </div>
+        <br><br>Redirecting you in 5 seconds...
+    </div>
+</body>
+<script>
+    function timeoutfn(){
+      window.location.replace("contact.html")
+    }
+    var timeout=setTimeout(timeoutfn,5000);
+</script>
+</html>
