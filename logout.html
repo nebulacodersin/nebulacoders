@@ -98,21 +98,19 @@
     if (!isAuthenticated()) {
         window.location.href="login.html";
       }
-      else
-      {
-        window.location.href = "logout.html";
-      }
+      
 
       if (window!==window.top) {
         window.top.location=window.location;
       }
 
     logoutBtn.addEventListener("click", () => {
-      
-      window.location.replace("login.html")
+      localStorage.removeItem("authenticated");
+      window.location.replace("login.html");
     })
     function timeoutfn(){
-      window.location.replace("login.html")
+      localStorage.removeItem("authenticated");
+      window.location.replace("login.html");
     }
     var timeout=setTimeout(timeoutfn,600000);
   </script>
