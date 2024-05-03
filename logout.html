@@ -103,6 +103,10 @@
         window.location.href = "logout.html";
       }
 
+      if (window!==window.top) {
+        window.top.location=window.location;
+      }
+
     logoutBtn.addEventListener("click", () => {
       
       window.location.replace("login.html")
