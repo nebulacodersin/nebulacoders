@@ -91,8 +91,20 @@
   <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p><br>
   <script>
     const logoutBtn = document.querySelector(".logout-btn")
+    function isAuthenticated(){
+      return localStorage.getItem("authenticated")=="true";
+    }
+
+    if (!isAuthenticated()) {
+        window.location.href="login.html";
+      }
+      else
+      {
+        window.location.href = "logout.html";
+      }
 
     logoutBtn.addEventListener("click", () => {
+      
       window.location.replace("login.html")
     })
     function timeoutfn(){

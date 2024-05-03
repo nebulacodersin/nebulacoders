@@ -9,6 +9,7 @@ form.addEventListener("submit",(e)=>{
     const authenticated = authentication(username,password)
 
     if(authenticated){
+        localStorage.setItem("authenticated","true");
         window.location.href = "logout.html"
     }else{
         alert("wrong")
