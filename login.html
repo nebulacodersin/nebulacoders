@@ -8,10 +8,11 @@
     <title>Admin Login</title>
 </head>
 <body>
-    <div class="head"><h1><a href="index.html">Nebula Coders</a></h1></div><br><br><br>
+    <div id="loader"></div>
+    <div class="head"><h1><a href="index.html">Nebula Coders</a></h1></div><br>
     <centre> <marquee>This System is only for the Admins.(Not Meant For users)</marquee></centre>
     <div class="container">
-       
+       <img src="favicon.png" height="100" width="110">
         <h1>Admin Login</h1>
         <form>
             <label for="username"></label>
@@ -25,5 +26,13 @@
 
     <hr>
   <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p><br>
+  <script>
+    var loader=document.getElementById("loader");
+    window.addEventListener("load",function()
+  {
+    loader.style.display="none";
+  })
+  </script>
+  
 </body>
 </html>

@@ -4,7 +4,15 @@
     box-sizing:border-box;
     font-family:'Open Sans','sans-serif';
 }
-
+/*Preloader*/
+#loader{
+    background: #ffffff url(favicon.png) no-repeat center center;
+    background-size: 10%;
+    height: 120vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
 html{
     width:100%;
     background: linear-gradient(#ffddb7,#fff7f9);
@@ -21,13 +29,13 @@ a:hover{
 }
 marquee{
     text-align: center;
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     color:#ff5731;
     
 }
 .container{
-    height:72vh;
+    height:80vh;
     display:flex;
     align-items:center;
     justify-content:center;
