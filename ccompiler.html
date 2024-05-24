@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="compiler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>C Compiler Online</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QMDKNKPVC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2QMDKNKPVC');
+</script>
+
+<body>
+    <div id="loader"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">NEBULA CODERS</a></div>
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nebulians.html">Nebulians</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="login.html" class="action_btn">Admin Login</a>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nebulians.html">Nebulians</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="action_btn">Admin Login</a></li>
+        </div>
+    </header>
+
+
+
+    <!--Navigation bar script-->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        const togglebtn = document.querySelector('.toggle')
+        const togglebtnicon = document.querySelector('.toggle i')
+        const dropdownmenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+        }
+    </script>
+    <div class="patron">
+        <h1>C Compiler</h1>
+        <hr>
+    </div><br><br>
+    <div class="work">
+        <div data-pym-src="https://www.jdoodle.com/embed/v1/618bd12f480dbada" class="embed"></div>
+        <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"> </script>
+    </div>
+
+
+    <script>
+        var loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h2>Nebula Coders <div class="underline"><span></span></div>
+                </h2>
+                <h3>Mon-Sat(10:00AM to 05:00PM)</h3>
+                <br>
+                <h3>Address</h3>
+                <p>B. P. Mandal College Of Engineering</p>
+                <p>Madhepura - 852128</p>
+                <p>Bihar, India</p>
+            </div>
+
+
+            <div class="col">
+                <h2>Links<div class="underline"><span></span></div>
+                </h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nebulians.html">Nebulians</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Newsletter<div class="underline"><span></span></div>
+                </h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="newsletterform">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30">
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                    <input type="hidden" name="access_key" value="fa4cf571-40bd-4b91-a1bf-ce13f11a4c46">
+                    <input type="hidden" name="redirect" value="https://nebulacoders.in/success.html">
+                    <input type="hidden" name="subject" value="Someone Subscribed Your Newsletter">
+                    <input type="email" name="email" placeholder="Enter Your email id" id="emailfield" required>
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30" width="30">
+                            <path
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="socialicon">
+                    <a href="https://whatsapp.com/channel/0029VabBpQ0F1YlOpPttv23J" target="_blank"><i
+                            class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/nebulacoders/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="mailto:nebulacodersbpmce+web@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.youtube.com/@NebulaCoders2024" target="_blank"> <i
+                            class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Map<div class="underline"><span></span></div>
+                </h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.175848010674!2d86.7959344111464!3d25.96227260019281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee36d1a1bf4b45%3A0xd0d19cdb17887f59!2sB.%20P.%20Mandal%20College%20of%20Engineering%20Madhepura!5e0!3m2!1sen!2sin!4v1712725908070!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="map"></iframe>
+            </div>
+
+        </div>
+        <hr>
+        <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
