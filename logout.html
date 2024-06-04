@@ -24,6 +24,9 @@
 
 <button class="logout-btn"> <img src="logout.png" class="logout"> </button> <br><br>
 <marquee>Welcome Back! Please Do not share the files to anyone unnecessarily.</marquee>
+  <div class="user" id="user" style="color:#fff"></div>
+
+
   <h3>Computer Science Department</h3>
   <div class="notes">
     <div class="list"><a href="COA 2023.pdf" download>BEU Computer Organization and architecture 2023</a>
@@ -134,6 +137,9 @@
         window.top.location=window.location;
       }
 
+      const user=localStorage.getItem("username");
+      const userdiv=document.getElementById("user");
+      userdiv.innerHTML=`<h5>Welcome, ${user}</h5>`
     logoutBtn.addEventListener("click", () => {
       localStorage.removeItem("authenticated");
       window.location.replace("login.html");
