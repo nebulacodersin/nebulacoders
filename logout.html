@@ -14,8 +14,11 @@
 
 <body>
   <div id="loader"></div>
+  <div class="user" id="user">
+   
+  </div>
   <div class="main">
-    <img src="favicon.png" height="100" width="110">
+   
     <div class="inner">
       <h1>Nebula Coders</h1>
       <h4>Admin Home Page</h4>
@@ -25,10 +28,9 @@
 
   <br>
 
-  <button class="logout-btn"> <img src="logout.png" class="logout"> </button> <br><br>
+<br><br>
   <marquee>Welcome Back! Please Do not share the files to anyone unnecessarily.</marquee>
-  <div class="user" id="user">
-  </div>
+  
 
 
   <h3>Computer Science Department</h3>
@@ -177,8 +179,10 @@
     }
     
 
-    userdiv.innerHTML = `<h5>Good ${wish(hours)}, ${user}</h5>
+    userdiv.innerHTML = ` <img src="favicon.png" height="100" width="110">
+    <h5>Good ${wish(hours)}, ${user}</h5>
       <img src="${imgurlid}"/>
+      <button class="logout-btn"> <img src="logout.png" class="logout"> </button> 
     `
     logoutBtn.addEventListener("click", () => {
       localStorage.removeItem("authenticated");

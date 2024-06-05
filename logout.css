@@ -19,6 +19,9 @@ html{
     background-repeat:no-repeat;
 }
 .main{
+    margin-top: 60px;
+    position:static;
+    justify-content: space-between;
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -48,10 +51,11 @@ h4{
     color:rgb(160, 161, 163);
     font-weight: bold;
 }
-h5{
+#user h5{
+    text-align: center;
     margin-left:20px;
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 22px;
     color:#ff7f50;
     margin-top: 10px;
 }
@@ -65,9 +69,32 @@ a:hover{
     padding: 1% 1%;
 }
 #user{
-    padding: 25px 0px;
+    top:0;
+    height: 80px;
+    background-color: #Fff;
+    width: 100%;
+    position:fixed;
+    padding: 10px 0px;
     display: flex;
     justify-content:space-around;
+    animation: run 2s  ease-in-out;
+    text-align: center;
+}
+@media(max-width:368px){
+    #user h5{
+        font-size: 20px;
+    }
+    #user{
+        height: 110px;
+    }
+}
+@keyframes run {
+    0%{
+        height: 60px;
+    }    
+    100%{
+        height: 100px;
+    }
 }
 #user img{
     border-radius: 50%;
@@ -75,6 +102,7 @@ a:hover{
     width: 60px;
     justify-content: flex-end;
 }
+
 hr{
     padding-top: 15%;
     width: 90%;
