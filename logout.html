@@ -162,7 +162,21 @@
     const user = localStorage.getItem("username");
     const imgurlid = localStorage.getItem("imgurl");
     const userdiv = document.getElementById("user");
-    userdiv.innerHTML = `<h5>Welcome, ${user}</h5>
+    const now = new Date();
+    const hours = now.getHours();
+    function wish(time) {
+      if(time>0 && time<12)
+      return "Morning"
+      if (time>=12 && time<=15) {
+      return "Afternoon"
+      
+    } else {
+      return "Evening"
+    }
+    }
+    
+
+    userdiv.innerHTML = `<h5>Good ${wish(hours)}, ${user}</h5>
       <img src="${imgurlid}"/>
     `
     logoutBtn.addEventListener("click", () => {
