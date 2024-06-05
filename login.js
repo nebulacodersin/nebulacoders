@@ -1,3 +1,4 @@
+
 const form = document.querySelector("form")
 
 form.addEventListener("submit",(e)=>{
@@ -11,8 +12,37 @@ form.addEventListener("submit",(e)=>{
     if(authenticated){
         localStorage.setItem("authenticated","true");
         window.location.href = "logout.html"
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+            });
+            Toast.fire({
+              icon: "success",
+              title: "Signed in successfully"
+            });
     }else{
-        alert("wrong")
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+            });
+            Toast.fire({
+              icon: "error",
+              title: "Invalid Credentials!"
+            });
     }
 })
 
