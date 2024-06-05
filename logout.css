@@ -53,6 +53,7 @@ h5{
     margin-bottom: 20px;
     font-size: 25px;
     color:#ff7f50;
+    margin-top: 10px;
 }
 a{
     color:#ff7f50;
@@ -63,7 +64,17 @@ a:hover{
 .list{
     padding: 1% 1%;
 }
-
+#user{
+    padding: 25px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+#user img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    justify-content: flex-end;
+}
 hr{
     padding-top: 15%;
     width: 90%;
@@ -74,6 +85,7 @@ hr{
 .copyright{
     color:#fff;
     text-align: center;
+    
 }
 .logout-btn,.logout{
     justify-content: end;
