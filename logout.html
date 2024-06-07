@@ -160,7 +160,9 @@
 
     const user = localStorage.getItem("username");
     const imgurlid = localStorage.getItem("imgurl");
+    const session=localStorage.getItem("session");
     const userdiv = document.getElementById("user");
+    
     const now = new Date();
     const hours = now.getHours();
     function wish(time) {
@@ -175,6 +177,17 @@
     }
     }
     
+    if (session==1) {
+      Swal.fire({
+      title: "Welcome Back!",
+      text: user,
+      imageUrl: imgurlid,
+      imageWidth: 300,
+      imageHeight: 250,
+      imageAlt: "Custom image"
+    });
+    localStorage.setItem("session",0);
+    }
 
     userdiv.innerHTML = ` <img src="favicon.png" height="100" width="110">
     <h5>Good ${wish(hours)}, ${user}</h5>
@@ -184,6 +197,9 @@
     const logoutBtn = document.querySelector(".logout-btn");
     logoutBtn.addEventListener("click", () => {
       localStorage.removeItem("authenticated");
+      localStorage.removeItem("session");
+      localStorage.removeItem("username");
+      localStorage.removeItem("imgurl");
       window.location.replace("login.html");
     })
     function timeoutfn() {

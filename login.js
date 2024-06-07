@@ -11,6 +11,7 @@ form.addEventListener("submit",(e)=>{
 
     if(authenticated){
         localStorage.setItem("authenticated","true");
+        localStorage.setItem("session","1");
         window.location.href = "logout.html"
         const Toast = Swal.mixin({
             toast: true,
