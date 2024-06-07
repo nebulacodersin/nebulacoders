@@ -81,6 +81,7 @@ function authentication(username,password){
     }
     else if(username === "22110128013" && password === "jiyaraj"){
         localStorage.setItem("username","Jiya");
+        localStorage.setItem("imgurl","jiya.jpg")
         return true
     }
     else{
