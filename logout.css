@@ -31,6 +31,7 @@ html{
     width: 30%;
 }
 marquee{
+    position: relative;
     color:#fff;
     width: 100%;
 }
@@ -79,6 +80,8 @@ a:hover{
     justify-content:space-around;
     animation: run 2s  ease-in-out;
     text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 @media(max-width:368px){
     #user h5{

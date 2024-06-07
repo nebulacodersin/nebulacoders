@@ -26,10 +26,7 @@
 
   </div>
 
-  <br>
-
-<br><br>
-  <marquee>Welcome Back! Please Do not share the files to anyone unnecessarily.</marquee>
+  
   
 
 
@@ -147,7 +144,7 @@
   <hr>
   <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p><br>
   <script>
-    const logoutBtn = document.querySelector(".logout-btn")
+    
     function isAuthenticated() {
       return localStorage.getItem("authenticated") == "true";
     }
@@ -182,8 +179,9 @@
     userdiv.innerHTML = ` <img src="favicon.png" height="100" width="110">
     <h5>Good ${wish(hours)}, ${user}</h5>
       <img src="${imgurlid}"/>
-      <button class="logout-btn"> <img src="logout.png" class="logout"> </button> 
+      <button class="logout-btn"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#DA954B"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg> </button> 
     `
+    const logoutBtn = document.querySelector(".logout-btn");
     logoutBtn.addEventListener("click", () => {
       localStorage.removeItem("authenticated");
       window.location.replace("login.html");
