@@ -125,7 +125,7 @@ hr{
 #captcha{
     letter-spacing: 5px;
     font-size: 18px;
-    background-color: #ff994f;
+    background:linear-gradient(#571902,#9e013b);
     text-align: center;
     padding: 5px 5px;
     cursor: pointer;
@@ -134,6 +134,8 @@ hr{
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    text-decoration:line-through;
+    font-weight: bold;
 }
 .valid{
     padding-left: 25px;
