@@ -1,44 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Admin Login</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Admin Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
-    <div id="loader"></div>
-    <div class="head"><h1><a href="index.html">Nebula Coders</a></h1></div><br>
-    <centre> <marquee>This System is only for the Admins.(Not Meant For users)</marquee></centre>
-    <div class="container">
-       <img src="favicon.png" height="100" width="110">
-        <h1>Admin Login</h1>
-        <form>
-            <label for="username"></label>
-            <input type="text" placeholder="Username" name="username" required>
-            <label for="password"></label>
-            <input type="password" placeholder="Password" name="password" required>
+  <div id="loader"></div>
+  <div class="head">
+    <h1><a href="index.html">Nebula Coders</a></h1>
+  </div><br>
+  <centre>
+    <marquee>This System is only for the Admins.(Not Meant For users)</marquee>
+  </centre>
+  <div class="container">
+    <img src="favicon.png" height="100" width="110">
+    <h1>Admin Login</h1>
+    <form>
+      <label for="username"></label>
+      <input type="text" placeholder="Username" name="username" required>
+      <label for="password"></label>
+      <input type="password" placeholder="Password" name="password" required>
 
-            <div class="g-recaptcha" data-sitekey="6Lc1fP4pAAAAADB6gwVvRAQWd20a7Y1xfkBRovVz"></div>
-            <button type="submit" class="login-btn" value="submit">Login</button>
-        </form>
-    </div>
-    <script src="./login.js"></script>
+      <div class="valid">
+        <span id="captcha"></span>
+        <button type="button" onclick="generateCaptcha()" class="captcha-btn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M480-192q-120 0-205.5-85T192-486l-57 57-51-51 144-144 144 144-51 51-57-57q-2 94 62 158t154 64q22 0 42-4t39-12l53 53q-30 16-63.5 25.5T480-192Zm252-144L588-480l51-51 57 57q2-94-62-158t-154-64q-21 0-41.5 4T399-680l-53-53q30-16 64-25.5t70-9.5q121 0 206 85t82 209l57-57 51 51-144 144Z"/></svg></button>
+      </div>
 
-    <hr>
+      <label for="captcha"></label>
+      <input type="text" id="captcha-input" placeholder="captcha" required>
+      <button type="submit" class="login-btn" value="submit" onclick="validateCaptcha(event)">Login</button>
+    </form>
+  </div>
+
+  <script src="./login.js"></script>
+  <script>
+    let captchaText = "";
+
+    function generateCaptcha() {
+      const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const captchaLength = 6;
+      let captcha = "";
+      for (let i = 0; i < captchaLength; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      captchaText = captcha;
+      document.getElementById('captcha').innerText = captcha;
+    }
+
+
+
+    // Generate initial CAPTCHA on page load
+    window.onload = generateCaptcha;
+  </script>
+
+  <hr>
   <p class="copyright">Nebula Coders © 2024 - All Rights Reserved</p><br>
   <script>
-    var loader=document.getElementById("loader");
-    window.addEventListener("load",function()
-  {
-    loader.style.display="none";
-  })
+    var loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
   </script>
-  
+
 </body>
+<script>
+  // Disable right-click context menu
+  document.getElementById('captcha').addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  });
+
+  // Prevent copying using keyboard shortcuts
+  document.getElementById('captcha').addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'a')) {
+          e.preventDefault();
+      }
+  });
+
+  // Prevent copying using right-click menu
+  document.getElementById('captcha').addEventListener('copy', function(e) {
+      e.preventDefault();
+  });
+
+  // Optionally, prevent selection by dragging
+  document.getElementById('captcha').addEventListener('mousedown', function(e) {
+      if (e.detail > 1) {
+          e.preventDefault();
+      }
+  });
+
+  // Prevent touch-based copying on mobile devices
+  document.getElementById('captcha').addEventListener('touchstart', function(e) {
+      e.preventDefault();
+  });
+</script>
 </html>
