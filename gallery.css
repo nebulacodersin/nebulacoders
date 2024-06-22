@@ -21,134 +21,6 @@ html {
 }
 
 
-/*Preloader End*/
-.navbar .links a{
-    color:#ff7f50;
-}
-.navbar .links a:hover{
-    color:whitesmoke;
-}
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #ff8848;
-    font-size: 1rem;
-}
-
-a:hover {
-    color: #ff7f50;
-}
-
-header {
-    position: relative;
-    padding: 0 2rem;
-
-}
-
-body {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-body::-webkit-scrollbar{
-    width:5px;
-}
-
-body::-webkit-scrollbar-track{
-    background-color:#ff7f50;
-    border-radius:50px;
-}
-
-body::-webkit-scrollbar-thumb{
-    cursor:pointer;
-    background-color:#ffffff;
-    border-radius:50px;
-}
-
-.navbar {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .links {
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar .toggle {
-    color: #f66517;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.action_btn {
-    background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-}
-
-.action_btn:hover {
-    scale: 1.05;
-    color: #fff;
-}
-
-.action_btn:active {
-    scale: 0.95;
-}
-
-.dropdown_menu {
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open {
-    height: 280px;
-}
-
-.dropdown_menu li {
-
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu .action_btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
 
 /*Start here*/
 .patron{
@@ -172,7 +44,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .container {
-    padding: 5% 5%;
+    padding: 80px 20px;
     display: flex;
     background-color: whitesmoke;
 }

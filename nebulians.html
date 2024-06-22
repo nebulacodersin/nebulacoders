@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="nebulians.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Nebulians</title>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -22,43 +22,77 @@
 
 <body>
     <div id="loader"></div>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">NEBULA CODERS</a></div>
 
-            <ul class="links">
-                <li><a href="index.html"><font face="arial" color=#ff7f50 size="5">Home</font></a></li>         
-                <li><a href="nebulians.html"><font face="arial" color=#ff7f50 size="5">Nebulians</font></a></li>
-                <li><a href="gallery.html"><font face="arial" color=#ff7f50 size="5">Gallery</font></a></li>
-                <li><a href="about.html"><font face="arial" color=#ff7f50 size="5">About Us</font></a></li>
-                <li><a href="contact.html"><font face="arial" color=#ff7f50 size="5">Contact Us</font></a></li>
-            </ul>
-            <a href="login.html" class="action_btn">Admin Login</a>
-            <div class="toggle">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-        <div class="dropdown_menu">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#DA954B">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="nebulians.html">Nebulians</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="login.html" class="action_btn">Admin Login</a></li>
-        </div>
-    </header>
+            <li><a href="login.html" target="_blank">Admin Login</a></li>
+            <script>
+                function toggleSidebar() {
+                    var sidebar = document.querySelector('.sidebar');
+                    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                        sidebar.style.display = 'block';
+                    } else {
+                        sidebar.style.display = 'none';
+                    }
+                }
 
-    <!--Navigation bar script-->
+                function hidesidebar() {
+                    document.querySelector('.sidebar').style.display = 'none';
+                }
+
+                document.addEventListener('click', function (event) {
+                    var sidebar = document.querySelector('.sidebar');
+                    var isClickInsideSidebar = sidebar.contains(event.target);
+                    var isClickOnNavIcon = document.querySelector('.nav-icon').contains(event.target);
+
+                    if (!isClickInsideSidebar && !isClickOnNavIcon) {
+                        sidebar.style.display = 'none';
+                    }
+                });
+            </script>
+        </ul>
+        <ul>
+            <li>
+                <div class="nav-icon" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#DA954B">
+                        <path
+                            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                    </svg>
+                </div>
+            <li>
+                <h2><a href="index.html">Nebula Coders</a></h2>
+            </li>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="nebulians.html">Nebulians</a></li>
+            <li class="hideonmobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideonmobile"><a href="about.html">About Us</a></li>
+            <li class="hideonmobile"><a href="contact.html">Contact Us</a></li>
+            <li class="hideonmobile"><a href="login.html" target="_blank">Admin Login</a></li>
+
+        </ul>
+    </nav>
     <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        const togglebtn = document.querySelector('.toggle')
-        const togglebtnicon = document.querySelector('.toggle i')
-        const dropdownmenu = document.querySelector('.dropdown_menu')
-
-        togglebtn.onclick = function () {
-            dropdownmenu.classList.toggle('open')
-            const isOpen = dropdownmenu.classList.contains('open')
+        function showsidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+            closecart();
         }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
     </script>
 
   
