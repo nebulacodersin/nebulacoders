@@ -38,7 +38,7 @@ header{
     padding: 0 2rem;
     
 }
-body{
+main{
     height: 100vh;
     background-image: url('nebula.gif');
     background-size: cover;
@@ -85,14 +85,11 @@ body::-webkit-scrollbar-thumb{
 
 }
 #bottom{
-    padding-top:86vh;
+    padding-top:0px;
     display: flex;
     flex-direction: column;
 }
 
-#bottom .patron{
-        padding-top:2% ;
-    }
 .intro:hover,.notice:hover{
     background-color: whitesmoke;
 }
