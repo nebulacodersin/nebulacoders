@@ -44,6 +44,7 @@ nav {
     border-bottom-right-radius: 10px ;
     color:#fff;
     position: fixed;
+    z-index:-1;
 }
 nav>ul>li> h2>a{
     color:#df7229;
